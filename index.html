@@ -1,37 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Profile card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <img src="images/bg-pattern-top.svg" alt="">
-  Victor Crest
-  26
-  London
+    <link rel="stylesheet" href="index-style.css" />
 
-  80K
-  Followers
+    <title>Frontend Mentor | Profile card component</title>
 
-  803K
-  Likes
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container-profile-card">
+        <div class="header"></div>
+        <div class="container-info">
+          <img class="profile-photo" src="images/image-victor.jpg" alt="">
+          <h5>Victor Crest <span>26</span></h5>
+          <p>London</p>
+        </div>
 
-  1.4K
-  Photos
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <ul class="container-stats">
+          <li>
+            <h5>80K</h5>
+            <h6>Followers</h6>
+          </li>
+          <li>
+            <h5>803K</h5>
+            <h6>Likes</h6>
+          </li>
+          <li>
+            <h5>1.4K</h5>
+            <h6>Photos</h6>
+          </li>
+        </ul>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Edison Padilla</a>.
+      </div>
+    </main>
+  </body>
 </html>
