@@ -7,19 +7,19 @@ body {
   background-color: hsl(185, 75%, 39%);
 }
 
-.img-bg-top{
+.img-bg-top {
   height: auto;
   position: absolute;
-  top: -550px;
-  left: -325px;
+  top: -575px;
+  left: -300px;
   z-index: -1;
 }
 
-.img-bg-bottom{
+.img-bg-bottom {
   height: auto;
   position: absolute;
-  bottom: -625px;
-  right: -275px;
+  bottom: -575px;
+  right: -300px;
   z-index: -1;
 }
 
@@ -45,8 +45,10 @@ main {
 .header {
   width: 100%;
   height: 35%;
+  background-color: lightseagreen;
   background-image: url(images/bg-pattern-card.svg);
   background-size: cover;
+  background-position: center;
 }
 
 .profile-photo {
@@ -56,7 +58,7 @@ main {
   border: solid 5px #fff;
 }
 
-.container-info{
+.container-info {
   margin-top: 65px;
 }
 
@@ -66,7 +68,7 @@ main {
   padding: 20px 0px;
   display: flex;
   justify-content: space-evenly;
-  border-top: solid 1px hsl(0, 0%, 89%);
+  border-top: solid 1px hsl(0, 0%, 79%);
 }
 
 h5 {
@@ -86,9 +88,42 @@ span {
 
 .attribution {
   margin-top: 8px;
+  color: #fff;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: hsl(229, 23%, 23%);
+  padding-bottom: 4px;
+  border-bottom: solid 2px transparent;
+  transition-duration: 0.75s;
+}
+
+.attribution a:hover {
+  border-color: hsl(229, 23%, 23%);
+  text-transform: uppercase;
+  
 }
 
 @media (max-width: 375px) {
+  body {
+    max-width: 100vw;
+  }
+
+  .img-bg-top {
+    width: 275px;
+    top: -100px;
+    left: -0px;
+  }
+
+  .img-bg-bottom {
+    width: 275px;
+    bottom: -100px;
+    right: 0px;
+  }
+
   .container-profile-card {
     width: 90%;
   }
